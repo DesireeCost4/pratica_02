@@ -1,0 +1,27 @@
+<h1>{{ primeiraVar }}</h1>
+
+<p>Essa é minha segunda Var: {{segundaVar}}</p>
+
+<p>Essa é minha terceira Var (ela é booleana) {{terceiraVar}}</p>
+
+<button (click)="pFunction(1,10)">Calcule</button>
+<button (click)="sFunction('hugo')">Saudação</button>
+<button (click)="tFunction(3, 3)">comparação + if</button>
+
+<button (click)="fVerificaralgo(5)">Switch Case n5</button>
+<button (click)="fVerificaralgo(1)">Switch Case n1</button>
+<button (click)="fVerificaralgo(3)">Switch Case n3</button>
+
+
+<button (click)="fWhile()">While</button>
+<button (click)="fLoop()">Loop2</button>
+<button (click)="loopPar()">numero par</button>
+
+
+<button (click)="fDoWhile()">Do While</button>
+
+<button (click)="minhaCondicional('desiree')">Condicional</button>
+<button (click)="minhaCondicional('teodoro')">Condicional com entrada string</button>
+
+
+<router-outlet />
