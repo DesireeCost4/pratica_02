@@ -13,9 +13,12 @@ export class AppComponent {
   title = 'pratica_02';
 
   primeiraVar: string = 'olá mundo - dia 2';
-  segundaVar: number = 25;
+  segundaVar: number = 9;
   terceiraVar:boolean = true;
   
+  pLista:any[]= ['string txt', 2, false, {nome: 'jose', idade: 90}];
+  vLista:any[]= ['sanduiche', 'coxinha', 'pudim', 'bolo'];
+  cLista:any[]= [10.00, 2.00, 7.00, 4.00];
 
 
 
@@ -126,6 +129,71 @@ export class AppComponent {
     }
 
 
+  }
+
+  segundaCond(n1:number){
+
+    if (n1 > 0){
+      console.log('numero aceito')
+    }   else {console.log('numero invalido')}
+
+  }
+
+  terceiraCond(){
+    if (this.segundaVar > 10){
+      console.log("numero maior que 10")
+    } else {
+      console.log('numero menor que 10')
+    }
+  }
+
+
+  fLaco(){
+    for(let i= 0; i<=5; i++){
+      console.log(i)
+    }
+  }
+
+  fcoisa(){
+    for(let i=0; i <= 3; i++) {
+      console.log(i)
+    }
+  }
+
+  maisUm(){
+    for(let i=10; i > 0; i--){
+      console.log(i)
+    }
+  }
+
+  chamarLista(){
+    console.log(this.pLista)
+  }
+
+  chamarLisTring(){
+    console.log(this.vLista)
+  }
+
+  chamarLiscString(){
+    console.log(this.cLista)
+  }
+
+  percorrerLista(){
+    for(let i=0; i<this.vLista.length; i++){
+      console.log(this.vLista[i]);
+    }
+  }
+
+  correrListaNumber(){
+    for(let i=0; i < this.cLista.length; i++){
+      console.log(this.cLista[i])
+    }
+  }
+
+  andarLista(){
+    for(let i=0; i < this.pLista.length; i++){
+      console.log(this.pLista[i])
+    }
   }
 
 }
